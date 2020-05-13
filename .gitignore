@@ -1,0 +1,13 @@
+# gitignore these files
+
+# links
+# https://www.atlassian.com/git/tutorials/saving-changes/gitignore#ignoring-a-previously-committed
+# https://help.github.com/en/github/using-git/ignoring-files
+# https://git-scm.com/docs/gitignore
+
+# Pycache + .pyc files
+__pycache__/
+*.pyc
+*.DS_Store
+.vagrant/
+*.log

@@ -1,0 +1,15 @@
+{% extends "pages/base.html" %} {% block content %}
+<section>
+  <div class="services-grid">
+    {% for post in posts %}
+    <div class="gradient-border">
+      <h3>{{ post.author }}</h3>
+      <h5>{{ post.title}}</h5>
+      <img class="post-img" src="{{post.image.url}}" alt="image" />
+      <p class="section-lead">{{post.content}}</p>
+      <p class="article-metadata">${{post.price}} USD</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content %}
